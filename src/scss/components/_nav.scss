@@ -1,0 +1,58 @@
+.nav {
+  font: 600 16px / 19px "Raleway";
+  color: $color-mine;
+
+  @include tablet {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 120px 30px 40px;
+    background-color: rgb(100, 100, 100, 0.9);
+    transition: left 0.3s ease 0s;
+  }
+
+  &--active {
+    @include tablet {
+      left: 0;
+    }
+
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 47px;
+
+      @include tablet {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    @include tablet {
+      font-size: 24px;
+      color: $color-white;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}

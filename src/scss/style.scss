@@ -1,0 +1,17 @@
+@import "vendors";
+@import "mixins";
+@import "fonts";
+@import "vars";
+@import "global";
+
+// Components import 
+
+@import "./components/header";
+@import "./components/major";
+@import "./components/courses";
+@import "./components/first-lesson";
+
+
+// Small components
+
+@import "./components/nav";

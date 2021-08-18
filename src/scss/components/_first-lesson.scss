@@ -1,0 +1,122 @@
+.lesson {
+  background-color: #e9e9e9;
+
+  &__container {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include tablet {
+      align-items: center;
+      flex-direction: column;
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__left {
+    max-width: 625px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    display: block;
+    margin-bottom: 38px;
+    padding-bottom: 15px;
+    font: 600 32px /30px "Raleway";
+    color: $color-dove-gray;
+
+    @include small-tablet {
+      font-size: 28px;
+      line-height: 24px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 100px;
+      height: 2px;
+      background-color: $color-mine;
+    }
+  }
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+
+      @include small-tablet {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__text {
+    font: 600 18px / 25px "Raleway";
+    color: $color-dove-gray;
+
+    @include small-tablet {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__right {
+    max-width: 535px;
+    padding: 18px 48px 60px;
+    background-color: $color-silver;
+    color: $color-black;
+  }
+
+  &__caption {
+    margin-bottom: 38px;
+    font: 500 30px / 34px "Montserrat";
+    text-align: center;
+  }
+
+  &__descr {
+    margin-bottom: 35px;
+    font: 400 16px / 20px "Montserrat";
+  }
+
+  &__form {
+    font: 400 16px / 20px "Montserrat";
+  }
+}
+
+.form {
+  &__input {
+    margin: 7px 0 26px 0;
+    max-width: 435px;
+    height: 52px;
+    width: 100%;
+    background-color: $color-white;
+    border-radius: 3px;
+    border: none;
+  }
+
+  .input-phone {
+    margin-bottom: 45px;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 14px 20px;
+    font: 300 20px / 30px "Montserrat";
+    background-color: $color-gallery;
+    border: 1px solid #969696;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+}

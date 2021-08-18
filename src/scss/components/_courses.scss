@@ -1,0 +1,65 @@
+.courses {
+  &__container {
+    margin-top: 80px;
+    padding-bottom: 160px;
+
+    @include small-tablet {
+      margin-top: 0;
+      padding-bottom: 80px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    @include tablet {
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.course {
+  max-width: 393px;
+  height: 260px;
+  padding: 25px 20px 20px 42px;
+  background-color: $color-mercury;
+  border-radius: 10px;
+
+  @include mobile {
+    height: auto;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font: 500 22px / 30px "Montserrat";
+    color: $color-black;
+
+    @include mobile {
+      font: 500 18px / 24px "Montserrat";
+    }
+  }
+
+  &__descr {
+    margin-bottom: 25px;
+    font: 400 16px / 22px "Montserrat";
+    color: $color-black;
+
+    @include mobile {
+      font: 500 14px / 18px "Montserrat";
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-left: auto;
+  }
+}
