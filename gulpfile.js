@@ -175,7 +175,6 @@ function fontsStyle(params) {
 }
 
 function callback() {
-
 }
 
 function watchFiles(params) {
